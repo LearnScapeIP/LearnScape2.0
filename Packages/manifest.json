@@ -1,11 +1,12 @@
 {
   "dependencies": {
-    "com.meta.xr.mrutilitykit": "65.0.0",
-    "com.meta.xr.sdk.audio": "65.0.0",
-    "com.meta.xr.sdk.haptics": "65.0.0",
-    "com.meta.xr.sdk.interaction": "65.0.0",
-    "com.meta.xr.sdk.interaction.ovr": "65.0.0",
-    "com.meta.xr.sdk.platform": "65.0.0",
+    "com.meta.xr.mrutilitykit": "64.0.0",
+    "com.meta.xr.sdk.all": "64.0.0",
+    "com.meta.xr.sdk.audio": "64.0.0",
+    "com.meta.xr.sdk.haptics": "64.0.0",
+    "com.meta.xr.sdk.interaction": "64.0.0",
+    "com.meta.xr.sdk.interaction.ovr": "64.0.0",
+    "com.meta.xr.sdk.platform": "64.0.0",
     "com.meta.xr.sdk.voice.dictation": "64.0.0",
     "com.meta.xr.sdk.voice.telemetry": "64.0.0",
     "com.meta.xr.simulator": "64.0.0",
