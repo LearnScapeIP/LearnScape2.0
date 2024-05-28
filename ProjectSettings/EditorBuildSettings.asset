@@ -14,6 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Muzica Scene.unity
     guid: 3755ac30d11ace942a4ab3f9d507fdda
+  - enabled: 1
+    path: Assets/Scenes/Informatica Quiz Scene.unity
+    guid: 27ff64997450ba745a31e0a5ed6b579d
+  - enabled: 1
+    path: Assets/Scenes/Informatica Final Scene.unity
+    guid: bbe6b2f173e25784fa293804f8ce4f34
+  - enabled: 1
+    path: Assets/Scenes/Muzica Final Scene.unity
+    guid: 92cfb54e5c8613f41b26f06049883461
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6b119d786d36e5241a3501d8de436852, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 49ba1ee52ab281a45baa036f4dc9b0be, type: 2}
