@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class QuizManager: MonoBehaviour
@@ -11,6 +12,7 @@ public class QuizManager: MonoBehaviour
     public int currentQuestion;
 
     public TMPro.TextMeshProUGUI questionText;
+    public string finalScene;
 
     private void Start()
     {
@@ -30,6 +32,7 @@ public class QuizManager: MonoBehaviour
         else
         {
             Debug.Log("End of the Room");
+            SceneManager.LoadScene(finalScene);
         }
     }
 
