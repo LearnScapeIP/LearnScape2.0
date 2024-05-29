@@ -600,6 +600,8 @@ GameObject:
   - component: {fileID: 166672901}
   - component: {fileID: 166672905}
   - component: {fileID: 166672906}
+  - component: {fileID: 166672908}
+  - component: {fileID: 166672907}
   m_Layer: 0
   m_Name: QuizManager
   m_TagString: Untagged
@@ -622,6 +624,8 @@ MonoBehaviour:
   QuAnList:
   - {fileID: 166672905}
   - {fileID: 166672906}
+  - {fileID: 166672908}
+  - {fileID: 166672907}
   options:
   - {fileID: 1153831507}
   - {fileID: 667234190}
@@ -656,14 +660,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1323d58472b814b4ca1f45c75c7db4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Question: Cine e zeu?
+  Question: "Ce folosim in muzica pentru a perfectiona un asa-zis \u201Cpunct culminant\u201C?"
   Answers:
-  - Eu
-  - Ry
-  - Eu, iar
-  - Ry, iar
-  CorrectAnswer: 1
-  Image: {fileID: 21300000, guid: 6e6ece336a6bf9046aec44762f38e6b4, type: 3}
+  - Metru binar
+  - Metru ternar
+  - Metru neutru
+  - Sirul lui Fibonacci
+  CorrectAnswer: 3
+  Image: {fileID: 21300000, guid: 14b10c2fa240444658a0765148deecd2, type: 3}
 --- !u!114 &166672906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,14 +680,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1323d58472b814b4ca1f45c75c7db4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Question: Top
+  Question: 'Instrumentul de suflat cunoscut inca din 900 i. Hr in ce categorie se
+    incadreaza? Instrumente din:'
   Answers:
-  - 1
-  - 2
-  - 3
-  - 4
-  CorrectAnswer: 3
-  Image: {fileID: 21300000, guid: c8baf7782bcf467498135c92699cd77e, type: 3}
+  - Fier
+  - Cupru
+  - Lemn
+  - Alama
+  CorrectAnswer: 2
+  Image: {fileID: 21300000, guid: aa499a744ad0847cda718c374c323ffd, type: 3}
+--- !u!114 &166672907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166672899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1323d58472b814b4ca1f45c75c7db4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Question: Ce aveau in comun Beethoven si Van Gogh
+  Answers:
+  - Aveau probleme cu auzul
+  - Erau pictori
+  - Erau cantareti
+  - Erau din societate burgheza
+  CorrectAnswer: 0
+  Image: {fileID: 21300000, guid: f713a254c25c543a48a710263f4cfe0e, type: 3}
+--- !u!114 &166672908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166672899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1323d58472b814b4ca1f45c75c7db4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Question: Ce l-a innebunit de tot pe Mozart?
+  Answers:
+  - Femeile
+  - Pariurile
+  - Mama sa
+  - Antonio Salieri
+  CorrectAnswer: 1
+  Image: {fileID: 21300000, guid: d7454c4283f234665a95b067cab38ff4, type: 3}
 --- !u!1 &173615500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,37 +2145,6 @@ MonoBehaviour:
   _controller: {fileID: 1245910195}
   _controllerButtonUsage: -1
   _requireButtonUsages: 0
---- !u!1 &1346245979
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1346245980}
-  m_Layer: 0
-  m_Name: black
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1346245980
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346245979}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1471069141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,8 +2393,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.8
-  m_fontSizeBase: 0.8
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3001,4 +3015,3 @@ SceneRoots:
   - {fileID: 933729191}
   - {fileID: 131668007}
   - {fileID: 166672904}
-  - {fileID: 1346245980}
