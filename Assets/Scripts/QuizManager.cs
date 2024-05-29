@@ -10,11 +10,12 @@ public class QuizManager: MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
 
-    public Text questionText;
+    public TMPro.TextMeshProUGUI questionText;
 
     private void Start()
     {
         SetQuestion(0);
+        Debug.Log(QuAnList.Count);
 
     }
 
@@ -44,7 +45,7 @@ public class QuizManager: MonoBehaviour
         for (int i = 0; i < options.Length; i++)
         {
             options[i].GetComponent<Answer>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<Text>().text = QuAnList[questionIndex].Answers[i];
+            options[i].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = QuAnList[questionIndex].Answers[i];
             options[i].GetComponent<Button>().image.color = Color.white;
             if (QuAnList[questionIndex].CorrectAnswer == i)
             {
